@@ -1,0 +1,179 @@
+---
+title: "Good Habits in R"
+subtitle: "&nbsp;"
+author: "Connor Gilroy"
+date: "`r Sys.Date()`"
+output: 
+  # html_document:
+  #   css: styles.css
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, presentation-styles.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: tomorrow
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: middle, font200, clear, divide-slide
+
+.pull-left.center.inverse[
+<br/>
+.font200[Principles]
+]
+
+.pull-right[
+
+1. Use good tools
+
+2. Write consistent code
+
+3. Organize your work
+
+]
+
+---
+
+class: center, middle, inverse, clear, font200
+
+.font150[Use good tools]
+
+----
+
+---
+
+class: font200
+
+# Use the tidyverse
+
+<br/>
+
+The [tidyverse](https://www.tidyverse.org/) is
+
+- a set of tools with consistent design
+- a way of thinking about data manipulation
+
+```{r eval=FALSE}
+install.packages("tidyverse")
+```
+
+
+
+
+---
+
+class: font200
+
+# Use RMarkdown
+
+.font90[RMarkdown lets you mix text and code in the same document:]
+
+.pull-left.font80[
+
+## Write in .Rmd: 
+
+<pre>
+## Header
+
+This is some text.
+
+```&#123;r&#125;
+# r code and output
+rnorm(2)
+```
+
+</pre>
+
+]
+
+.pull-right.font80[
+
+## See in output: 
+
+## Header
+
+This is some text.
+
+```{r}
+# r code and output
+rnorm(2)
+```
+
+]
+
+
+---
+
+class: center, middle, inverse, clear, font200
+
+.font150[Write consistent code]
+
+----
+
+---
+
+class: font200
+
+# Use a standard style
+
+<br/>
+
+- Use spaces and indentation consistently
+
+- Spread code out over several lines if it's too long
+
+- Adopt a style guide, like this one: https://style.tidyverse.org/
+
+---
+
+class: font200
+
+# Name things well
+
+<br/>
+
+*Files* and *variables* should have descriptive names
+
+- no caps
+- no spaces 
+- underscores for separation
+
+---
+
+class: center, middle, inverse, clear, font200
+
+.font150[Organize your work]
+
+----
+
+---
+
+class: font200
+
+# Organize your work
+
+<br/>
+
+- Use R projects (`.Rproj` files), and make sure you're opening data using relative paths
+
+- Use subfolders, like a `data/` folder
+
+- Don't save `.RData` or other extraneous stuff from your workspace. Keep it clean!
+
+---
+
+class: center, middle, inverse, clear, font200
+
+.font150[Other tips]
+
+----
+
+---
+
+class: font200
+
+# Miscellaneous
+
+- **Learn RStudio keyboard shortcuts!** For example, CMD-Enter or CTRL-Enter to run code, tab completion, up arrow for previous commands...
+
+- **Long-term:** think about learning topics like version control, and a bit about the command line
